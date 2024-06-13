@@ -34,9 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent serviceIntent = new Intent(getApplicationContext(), MyCustomService.class);
-                    startService(serviceIntent);
+                    stopService(serviceIntent);
                 }
             });
         }
     }
-}
